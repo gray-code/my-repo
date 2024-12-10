@@ -7,5 +7,5 @@ jobs:
       - id: test
         run: echo "animal=Cat" >> "${GITHUB_OUTPUT}"
       - env:
-          PET: ${{ steps.test.outputs.test }}
+          PET: ${{ steps.test.outputs.animal }}
         run: echo "${PET}"
